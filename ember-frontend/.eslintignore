@@ -1,0 +1,13 @@
+# Ignore dependencies
+/node_modules/*
+/bower_components/*
+/dist/
+/vendor/
+
+# Ignore all test files
+tests/
+# tests/*
+
+# Ignore built files except build/index.js
+build/*
+!build/index.js

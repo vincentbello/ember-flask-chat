@@ -1,0 +1,1 @@
+{"modulePrefix":"test-app","environment":"development","rootURL":"/","locationType":"auto","EmberENV":{"FEATURES":{},"EXTEND_PROTOTYPES":{"Date":false}},"APP":{"name":"test-app","version":"0.0.0+"},"API":{"namespace":"api"},"exportApplicationGlobal":true}

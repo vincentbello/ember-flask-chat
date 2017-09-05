@@ -1,0 +1,71 @@
+.chat-message {
+  display: flex;
+  padding: 10px 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #EEE;
+  }
+
+  &__image {
+    height: 50px;
+    width: 50px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+  &__main {
+    flex: 1 0 auto;
+  }
+
+  &__header {
+    display: flex;
+  }
+
+  &__info {
+    flex: 1 0 auto;
+  }
+
+  &__name {
+    font-weight: bold;
+    padding-right: 5px;
+  }
+
+  &__meta {
+    font-size: 0.8rem;
+    color: gray;
+  }
+
+  &__content {
+    font-size: 1rem;
+  }
+
+  &__edit-input {
+    font-size: 1rem;
+    padding: 3px;
+  }
+
+  &__button {
+    opacity: 0;
+    border: 1px solid blue;
+    border-radius: 3px;
+    color: blue;
+    background: none;
+    cursor: pointer;
+    margin-left: 5px;
+
+    &--danger {
+      color: red;
+      border-color: red;
+    }
+
+    &--save {
+      opacity: 1;
+    }
+
+    .chat-message:hover & {
+      opacity: 1;
+    }
+  }
+}

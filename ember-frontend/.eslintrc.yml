@@ -1,0 +1,86 @@
+extends: "airbnb-base"
+
+# App code runs in the browser
+env:
+  browser: true
+  node: false
+
+# Use Babel for parsing
+parser: "babel-eslint"
+
+# Enable the ESNext features that we use.
+ecmaFeatures:
+  arrowFunctions: true
+  blockBindings: true
+  classes: true
+  defaultParams: true
+  destructuring: true
+  forOf: false
+  generators: false
+  modules: true
+  objectLiteralComputedProperties: true
+  objectLiteralDuplicateProperties: false
+  objectLiteralShorthandMethods: true
+  objectLiteralShorthandProperties: true
+  restParams: true
+  spread: true
+  superInFunctions: false
+  templateStrings: true
+  jsx: false
+
+# Override Airbnb rules where we've decided to diverge
+rules:
+  arrow-body-style: 0
+  comma-dangle: 1
+  consistent-return: 0
+  func-names: 0
+  id-blacklist:
+    - 2
+    - "K"
+  max-len:
+    - 1
+    - 110
+    - 2
+    - ignoreUrls: true
+  new-cap:
+    - 1
+    - capIsNewExceptions:
+      - "A"
+  newline-per-chained-call: 0
+  no-console:
+    - error
+    - allow:
+      - warn
+      - error
+  no-underscore-dangle: 0
+  no-unused-vars:
+    - 1
+    - varsIgnorePattern: "^_$"
+  prefer-arrow-callback: 0
+  prefer-const: 1
+  prefer-rest-params: 0
+  prefer-template: 1
+  no-restricted-syntax:
+    - 2
+    # - "DebuggerStatement"
+    # - "EmptyStatement"
+    # - "ForOfStatement"
+    # - "SequenceExpression"
+    - "WithStatement"
+  curly: 2
+  no-implicit-coercion:
+    - 2
+    - boolean: false
+      number: true
+      string: true
+      # allow:
+      #   - "!!"
+      #   - "~"
+  no-param-reassign:
+    - 1
+    - props: false
+  import/no-unresolved: 0
+  import/no-extraneous-dependencies: 0
+  import/extensions: 0
+  import/first: 0
+  import/no-mutable-exports: 0

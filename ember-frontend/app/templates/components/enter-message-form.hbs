@@ -1,0 +1,8 @@
+{{yield (to-object
+  authors=authors
+  authorId=authorId
+  message=message
+  setAuthor=(action "setAuthor")
+  updateMessage=(action "updateMessage")
+  enterMessage=(action "enterMessage" message authorId)
+)}}

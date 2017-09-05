@@ -1,0 +1,54 @@
+<main class="chatroom">
+  <ul class="chatroom__message-list">
+    {{#each model as |message|}}
+      {{#chat-message
+        message=message
+        updateMessageContent=(route-action "updateMessageContent" message)
+        as |messageApi|
+      }}
+        <img src="{{message.author.imageUrl}}" alt="{{message.author.name}}" class="chat-message__image" />
+        <div class="chat-message__main">
+          <header class="chat-message__header">
+            <div class="chat-message__info">
+              <span class="chat-message__name">{{message.author.name}}</span>
+              <span class="chat-message__meta">{{message.createdAt}}</span>
+            </div>
+            {{#if messageApi.isEditing}}
+              <button class="chat-message__button" {{action messageApi.cancelEdit}}>Cancel</button>
+            {{else}}
+              <button class="chat-message__button" {{action messageApi.edit}}>Edit</button>
+              <button class="chat-message__button chat-message__button--danger" {{action (route-action "deleteMessage" message)}}>Delete</button>
+            {{/if}}
+          </header>
+          <div class="chat-message__content">
+            {{#if messageApi.isEditing}}
+              <form>
+                <input type="text" class="chat-message__edit-input" id="edit-message-{{message.id}}" />
+                <button type="submit" class="chat-message__button chat-message__button--save" {{action messageApi.saveEdit}}>Save</button>
+              </form>
+            {{else}}
+              {{message.content}}
+            {{/if}}
+          </div>
+        </div>
+      {{/chat-message}}
+    {{else}}
+    <div class="chatroom__no-messages">
+      No messages to show.
+    </div>
+    {{/each}}
+  </ul>
+  {{#enter-message-form
+    fetchAuthors=(route-action "fetchAuthors")
+    submitMessage=(route-action "submitMessage")
+    as |formApi|
+  }}
+    <select name="author-select" id="author-select" onchange={{action formApi.setAuthor}} class="enter-message-form__select">
+      {{#each formApi.authors as |author|}}
+        <option value={{author.id}} selected={{eq author.id formApi.authorId}}>{{author.name}}</option>
+      {{/each}}
+    </select>
+    <input type="text" id="enter-message-input" class="enter-message-form__input" placeholder="Enter message..." onchange={{action formApi.updateMessage}} value={{formApi.message}} />
+    <button type="submit" class="enter-message-form__button" {{action formApi.enterMessage}}>Submit</button>
+  {{/enter-message-form}}
+</main>

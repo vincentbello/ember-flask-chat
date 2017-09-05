@@ -1,0 +1,1 @@
+/Users/vbello/sandbox/myflaskapp/ember-frontend/tmp/config_replace-output_path-IXyL0XG2.tmp/app-prefix.js

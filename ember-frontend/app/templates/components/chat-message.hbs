@@ -1,0 +1,6 @@
+{{yield (to-object
+  isEditing=isEditing
+  edit=(action "edit")
+  cancelEdit=(action (mut isEditing) false)
+  saveEdit=(action "saveEdit")
+)}}

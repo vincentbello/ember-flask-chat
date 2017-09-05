@@ -1,0 +1,27 @@
+.chatroom {
+  max-width: 50vw;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &__message-list {
+    padding: 8px;
+    margin: 0;
+    overflow-y: scroll;
+    border-bottom: 1px solid lightgray;
+    flex: 1 0 0;
+  }
+
+  &__no-messages {
+    text-align: center;
+  }
+}

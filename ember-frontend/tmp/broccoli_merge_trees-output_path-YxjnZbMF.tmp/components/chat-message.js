@@ -1,0 +1,1 @@
+/Users/vbello/sandbox/myflaskapp/ember-frontend/app/components/chat-message.js

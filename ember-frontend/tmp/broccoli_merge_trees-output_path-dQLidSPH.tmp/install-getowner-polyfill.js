@@ -1,0 +1,1 @@
+/Users/vbello/sandbox/myflaskapp/ember-frontend/node_modules/ember-getowner-polyfill/vendor/install-getowner-polyfill.js
