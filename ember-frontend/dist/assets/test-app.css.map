@@ -3,10 +3,10 @@
 	"file": "test-app.css",
 	"sourceRoot": "/Users/vbello/sandbox/myflaskapp/ember-frontend/app/styles",
 	"sources": [
-		"../../sass_compiler-input_base_path-3lcdFZwp.tmp/app/styles/app.scss",
-		"../../sass_compiler-input_base_path-3lcdFZwp.tmp/app/styles/_chatroom.scss",
-		"../../sass_compiler-input_base_path-3lcdFZwp.tmp/app/styles/_chat-message.scss",
-		"../../sass_compiler-input_base_path-3lcdFZwp.tmp/app/styles/_enter-message-form.scss"
+		"../../sass_compiler-input_base_path-jRlEivAy.tmp/app/styles/app.scss",
+		"../../sass_compiler-input_base_path-jRlEivAy.tmp/app/styles/_chatroom.scss",
+		"../../sass_compiler-input_base_path-jRlEivAy.tmp/app/styles/_chat-message.scss",
+		"../../sass_compiler-input_base_path-jRlEivAy.tmp/app/styles/_enter-message-form.scss"
 	],
 	"sourcesContent": [
 		"html,\nbody {\n  font-family: sans-serif;\n  margin: 0;\n  padding: 0;\n  background-color: #EEE;\n}\n\n@import \"chatroom\";\n@import \"chat-message\";\n@import \"enter-message-form\";\n",

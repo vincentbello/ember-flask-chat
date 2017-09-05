@@ -1,1 +1,0 @@
-/Users/vbello/sandbox/myflaskapp/ember-frontend/tmp/funnel-input_base_path-ZDlhpzIo.tmp/testem.js

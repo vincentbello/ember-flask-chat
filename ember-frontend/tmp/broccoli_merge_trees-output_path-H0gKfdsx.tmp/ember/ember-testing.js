@@ -1,1 +1,0 @@
-/Users/vbello/sandbox/myflaskapp/ember-frontend/node_modules/ember-source/dist/ember-testing.js

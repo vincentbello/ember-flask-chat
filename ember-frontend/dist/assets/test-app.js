@@ -843,6 +843,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("test-app/app")["default"].create({"name":"test-app","version":"0.0.0+"});
+  require("test-app/app")["default"].create({"name":"test-app","version":"0.0.0+97470a95"});
 }
 //# sourceMappingURL=test-app.map

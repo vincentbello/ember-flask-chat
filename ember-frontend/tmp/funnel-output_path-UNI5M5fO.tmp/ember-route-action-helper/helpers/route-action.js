@@ -1,1 +1,0 @@
-/Users/vbello/sandbox/myflaskapp/ember-frontend/tmp/funnel-input_base_path-kLTJSUG4.tmp/helpers/route-action.js
